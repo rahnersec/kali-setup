@@ -130,3 +130,15 @@
   ansible.builtin.apt:
     autoclean: true
   become: true
+
+- name: Check if Rockyou.txt.gz exists
+  ansible.builtin.stat:
+    path: /usr/share/wordlists/rockyou.txt.gz
+  register: rockyou_gz
+
+- name: Gunzip Rockyou wordlist
+  ansible.builtin.shell: "gunzip /usr/share/wordlists/rockyou.txt.gz"
+  args:
+    executable: /bin/bash
+  become: true
+  when: rockyou_gz.stat.exists
