@@ -1,0 +1,64 @@
+---
+packages:
+  - awscli
+  - azure-cli
+  - bloodhound
+  - cmake
+  - covenant-kbx
+  - curl
+  - docker.io
+  - docker-compose
+  - eyewitness
+  - enum4linux
+  - exa
+  - exif
+  - exiftool
+  - flameshot
+  - ffuf
+  - gdb
+  - gdbserver
+  - ghidra
+  - gobuster
+  - hexedit
+  - jq
+  - libssl-dev
+  - libimage-exiftool-perl
+  - mlocate
+  - nbtscan-unixwiz
+  - neo4j
+  - net-tools
+  - nikto
+  - nmap
+  - openssh-server
+  - parallel
+  - payloadsallthethings
+  - pipx
+  - python3-pip
+  - python3-venv
+  - rlwrap
+  - seclists
+  - scite
+  - smbclient
+  - smtp-user-enum
+  - whatweb
+  - wireshark
+  - xclip
+  - xsel
+
+python_pip_packages:
+  - bloodhound
+  - capstone
+  - mitm6
+  - pipenv
+  - poetry
+  - pwntools
+  - roadrecon
+  - ropper
+  - unicorn
+  - pywal
+
+ruby_gem_packages:
+  - winrm
+  - winrm-fs
+  - stringio
+  - evil-winrm

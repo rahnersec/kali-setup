@@ -1,0 +1,10 @@
+# code: language=ansible
+---
+- name: "Customizing Kali"
+  hosts: localhost
+  connection: local
+  roles:
+    - role: "roles/pre-config"
+    - role: "roles/package-install"
+    - role: "roles/tools-install"
+    - role: "roles/system-customizations"
