@@ -6,23 +6,23 @@ packages:
   - cmake
   - covenant-kbx
   - curl
-  - docker.io
   - docker-compose
-  - eyewitness
+  - docker.io
   - enum4linux
   - exa
   - exif
   - exiftool
-  - flameshot
+  - eyewitness
   - ffuf
+  - flameshot
   - gdb
   - gdbserver
   - ghidra
   - gobuster
   - hexedit
   - jq
-  - libssl-dev
   - libimage-exiftool-perl
+  - libssl-dev
   - mlocate
   - nbtscan-unixwiz
   - neo4j
@@ -36,8 +36,8 @@ packages:
   - python3-pip
   - python3-venv
   - rlwrap
-  - seclists
   - scite
+  - seclists
   - smbclient
   - smtp-user-enum
   - whatweb
@@ -46,19 +46,20 @@ packages:
   - xsel
 
 python_pip_packages:
+  - arsenal-cli
   - bloodhound
   - capstone
   - mitm6
   - pipenv
   - poetry
   - pwntools
+  - pywal
   - roadrecon
   - ropper
   - unicorn
-  - pywal
 
 ruby_gem_packages:
+  - evil-winrm
+  - stringio
   - winrm
   - winrm-fs
-  - stringio
-  - evil-winrm
