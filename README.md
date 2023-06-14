@@ -1,6 +1,6 @@
 # Ansible Playbooks for Customizing Kali Linux Setup
 
-This collection of Ansible playbooks provides an automated  way to customize and configure your Kali Linux machine. all of the configuration is based on my personal preference and should me considerd as an example.
+This collection of Ansible playbooks provides an automated  way to customize and configure your Kali Linux machine. all of the configuration is based on my personal preference and should be considered as an example.
 
 The playbooks are organized into roles, allowing you to selectively customize different aspects of your Kali Linux machine. You could easily extend the playbooks by creating your own roles or modifying the existing ones to suit your specific needs.
 
@@ -25,7 +25,11 @@ To get started with customizing your Kali Linux machine using these Ansible play
    cd kali-setup
    ansible-playbook -K main.yml
    ```
-   The `-K` will request your `sudo` password in order to make the nessasary system changes.
+The `-K` will request your `sudo` password in order to make the necessary system changes.
+
+## Acknowledgements
+
+The content of the playbook is largely based on the work done by [@Aegrah](https://github.com/Aegrah/) (https://github.com/Aegrah/kali_ansible_setup).
 
 ## Contributing
 
