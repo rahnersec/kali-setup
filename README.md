@@ -23,7 +23,7 @@ To get started with customizing your Kali Linux machine using these Ansible play
 4. Run the playbook to customize your Kali Linux machine.
    ```bash
    cd kali-setup
-   ansible-galaxy role install -r requirements.yml
+   ansible-galaxy install -r requirements.yml
    ansible-playbook -K main.yml
    ```
 The `-K` will request your `sudo` password in order to make the necessary system changes.

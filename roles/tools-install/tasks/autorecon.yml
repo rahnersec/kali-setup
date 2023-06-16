@@ -25,7 +25,7 @@
     executable: pip3
   become: true
 
-- name: Install pipx ensurepath
+- name: Run pipx ensurepath
   ansible.builtin.shell: python3 -m pipx ensurepath
   args:
     executable: /bin/bash
@@ -36,4 +36,6 @@
     executable: /bin/zsh
 
 - name: Install AutoRecon via pipx
-  ansible.builtin.shell: pipx install git+https://github.com/Tib3rius/AutoRecon.git
+  community.general.pipx: 
+    name: AutoRecon
+    source: git+https://github.com/Tib3rius/AutoRecon.git
