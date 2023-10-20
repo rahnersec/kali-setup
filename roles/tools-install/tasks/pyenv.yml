@@ -24,5 +24,7 @@
     marker: "# {mark} pyenv Setup header"
     block: |
       # Init pyenv.
-      ${HOME}/.pyenv/bin/pyenv init 
-      ${HOME}/.pyenv/bin/pyenv virtualenv-init 
+      export PYENV_ROOT="$HOME/.pyenv"
+      command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+      eval "$(pyenv init -)"
+      eval "$(pyenv virtualenv-init -)"
