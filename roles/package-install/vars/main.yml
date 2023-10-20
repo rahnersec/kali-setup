@@ -3,7 +3,7 @@ packages:
   - awscli
   - azure-cli
   - cmake
-  - covenant-kbx
+  #- covenant-kbx # Does not install on Arm64/M1/M2
   - curl
   - docker-compose
   - docker.io
