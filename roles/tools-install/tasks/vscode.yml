@@ -1,6 +1,6 @@
 # code: language=ansible
 ---
-- name: Install dependencies (apt)
+- name: Install VS Code
   ansible.builtin.include_role:
     name: gantsign.visual-studio-code
   vars:
