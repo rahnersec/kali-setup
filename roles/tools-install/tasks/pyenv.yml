@@ -1,0 +1,28 @@
+# code: language=ansible
+---
+- name: Clone pyenv git repositories
+  ansible.builtin.git:
+    repo: "https://github.com/pyenv/pyenv.git"
+    dest: "{{ lookup('ansible.builtin.env', 'HOME') }}/.pyenv}"
+    force: true
+- name: Clone pyenv plugin git repositories
+  ansible.builtin.git:
+    repo: "https://github.com/{{ item.repo }}"
+    dest: "{{ lookup('ansible.builtin.env', 'HOME') }}/.pyenv/plugins/{{ item.name }}"
+    force: true
+  loop: 
+    - name: pyenv-doctot
+      repo: "pyenv/pyenv-doctor.git"
+    - name: pyenv-update
+      repo: "pyenv/pyenv-update.git"
+    - name: pyenv-virtualenv
+      repo: "pyenv/pyenv-virtualenv.git"
+- name: Setup pyenv init in .zshrc
+  ansible.builtin.blockinfile:
+    path: "{{ lookup('ansible.builtin.env', 'HOME') }}/.zshrc"
+    insertbefore: EOF
+    marker: "# {mark} pyenv Setup header"
+    block: |
+      # Init pyenv.
+      ${HOME}/.pyenv/bin/pyenv init 
+      ${HOME}/.pyenv/bin/pyenv virtualenv-init 
