@@ -21,7 +21,6 @@ packages:
   - jq
   - libimage-exiftool-perl
   - libssl-dev
-  - mlocate
   - nbtscan-unixwiz
   - neo4j
   - net-tools
@@ -31,6 +30,7 @@ packages:
   - parallel
   - payloadsallthethings
   - pipx
+  - plocate
   - python3-pip
   - python3-venv
   - rlwrap
