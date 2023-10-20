@@ -7,4 +7,8 @@
     - role: "roles/pre-config"
     - role: "roles/package-install"
     - role: "roles/tools-install"
+      vars:
+      - optional_tools: 
+        - "sublime"
+        - "vscode"
     - role: "roles/system-customizations"
