@@ -3,7 +3,7 @@
 - name: Clone pyenv git repositories
   ansible.builtin.git:
     repo: "https://github.com/pyenv/pyenv.git"
-    dest: "{{ lookup('ansible.builtin.env', 'HOME') }}/.pyenv}"
+    dest: "{{ lookup('ansible.builtin.env', 'HOME') }}/.pyenv"
     force: true
 - name: Clone pyenv plugin git repositories
   ansible.builtin.git:
