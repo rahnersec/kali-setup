@@ -20,6 +20,8 @@
 
 - name: Install optional tools
   ansible.builtin.include_tasks:
-    file: "{{ item }}.yml"
+    file: "{{ tool }}.yml"
   loop: "{{ optional_tools }}"
+  loop_control:
+    loop_var: tool
 
