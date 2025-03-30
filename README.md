@@ -10,7 +10,7 @@ To get started with customizing your Kali Linux machine using these Ansible play
 
 1. Clone this repository to your local machine.
    ```bash
-   git clone https://github.com/1337-42/kali-setup.git
+   git clone https://github.com/rahnersec/kali-setup.git
    ```
 
 2. Install Ansible on your control machine.
